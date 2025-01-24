@@ -11,21 +11,26 @@
 <body>
     <!--Header deel-->
     <header>
-        <p class="myname sanswhite">Jayvyn Bongers</p>
+        <p class="myname sanswhite">Jayvyn</p>
         <nav>
             <a href="Contact" class="contact sanswhite">Contact me</a>
         </nav>
     </header>
     <!--Introductie deel-->
-    <div class="position">
-        <div class="white intro" id="intro">
-            <h1 class="name">
-                I'm Jayvyn
-            </h1>
-            <p class="student">Studying Software Development</p>
+    <div class="position positionme"   id="intro">
+        <div class="white intro">
+            <div>
+                <h1 class="name">
+                    I'm Jayvyn
+                </h1>
+                <p class="student">Studying Software Development</p>
+            </div>
+            <div>
+                <img src="img/Image.jpg" alt="" class="meimg">
+            </div>
         </div>
     </div>
-<!--Skills & Tools deel-->
+    <!--Skills & Tools deel-->
     <div class="position">
         <div class="toolscontainer" id="tools">
             <div class="tools">
@@ -33,54 +38,73 @@
                     <h2 class="toolstext">Tools I use</h2>
                 </div>
                 <div class="white skills down">
-                    <img src="img/HTML5.png" alt="HTML5 logo" class="toolslogo">
-                    <img src="img/CSS3_logo.png" alt="CSS3 logo" class="toolslogo">
-                    <img src="img/Java_programming.png" alt="Java logo" class="toolslogo">
+                    <a href="javascript:void(0);" onclick="changeInfo('html')">
+                        <img src="img/HTML5.png" alt="HTML5 logo" class="toolslogo">
+                    </a>
+                    <a href="javascript:void(0);" onclick="changeInfo('css')">
+                        <img src="img/CSS3_logo.png" alt="CSS3 logo" class="toolslogo">
+                    </a>
+                    <a href="javascript:void(0);" onclick="changeInfo('js')">
+                        <img src="img/Java_programming.png" alt="Java logo" class="toolslogo">
+                    </a>
                 </div>
             </div>
-            <div class="white tools2"></div>
+            <div class="white tools2" id="infoblock">Click on a tool to learn more about it.</div>
         </div>
+        <script src="script.js"></script>
     </div>
     <!-- Project deel -->
-<div class="position" id="project">
-    <div>
-        <div class="projecttitle">
-            <h2 class="projecttext">My projects</h2>
-        </div>
-        <div class="project">
-            <div>
-                <h3 class="sanswhite bigtext">Pink Goose</h3>
-            <img src="img/pinkgoose.png" alt="pink goose website" class="projectimg">
-            <p class="sanswhite">Website developed in HTML & CSS</p>
-        </div>
-        
+    <div class="position" id="project">
         <div>
-            <h3 class="sanswhite bigtext">Mastermind</h3> 
-            <img src="img/Mastermind.png" alt="mastermind game java" class="projectimg mastermindimg">
-            <p class="sanswhite">Game written in Java</p>
+            <div class="projecttitle">
+                <h2 class="projecttext">My projects</h2>
+            </div>
+            <div class="project">
+                <div>
+                    <h3 class="sanswhite bigtext">Pink Goose</h3>
+                    <img src="img/pinkgoose.png" alt="pink goose website" class="projectimg">
+                    <p class="sanswhite">Website developed in HTML & CSS</p>
+                </div>
+
+                <div>
+                    <h3 class="sanswhite bigtext">Mastermind</h3>
+                    <img src="img/Mastermind.png" alt="mastermind game java" class="projectimg mastermindimg">
+                    <p class="sanswhite">Game written in Java</p>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="position" id="contactid">
+        <div class="thelastboxes">
+            <div class="contactmebox white">
+                <h2>Contact me</h2>
+            </div>
+            <div class="theinfobox white">
+                <ul>
+                <p>0612345678 </p>
+                <p>fakemail@fakemail.com</p>
+            </ul>
+            </div>
         </div>
     </div>
-</div>
-<!-- Footer deel -->
-<footer class="white">
-    <div class="footercontent">
-        <p class="bigfooter">Search</p>
-        <div class="directions">
-        <a href="#intro" class="directionlinks blacktext">About me</a>
-        <a href="#tools" class="directionlinks blacktext">Tools</a>
-        <a href="#project" class="directionlinks blacktext">Projects</a>
-    </div>
-    </div>
-    <div class="footercontent">
-        <p class="bigfooter">Contact</p>
-        <div class="directions">
-        <a href="" class="directionlinks blacktext">Phone</a>
-        <a href="" class="directionlinks blacktext">Mail</a>
-        <a href="" class="directionlinks blacktext">Post Message</a>
-    </div>
-    </div>
-</footer>
+    <!-- Footer deel -->
+    <footer class="white">
+        <div class="footercontent">
+            <p class="bigfooter">Search</p>
+            <div class="directions">
+                <a href="#intro" class="directionlinks blacktext">About me</a>
+                <a href="#tools" class="directionlinks blacktext">Tools</a>
+                <a href="#project" class="directionlinks blacktext">Projects</a>
+            </div>
+        </div>
+        <div class="footercontent">
+            <p class="bigfooter">Contact</p>
+            <div class="directions">
+                <a href="#contactid" class="directionlinks blacktext">Phone</a>
+                <a href="#contactid" class="directionlinks blacktext">Mail</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

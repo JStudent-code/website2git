@@ -4,62 +4,86 @@ body {
     margin: 0px;
     font-family: serif;
 }
+
 header {
     display: flex;
     background-color: rgba(86, 106, 87, 1);
     align-items: center;
     justify-content: space-between
 }
+
 h1 {
     font-weight: normal;
 }
+
 h2 {
     font-weight: normal;
 }
+
 h3 {
     font-weight: normal;
 }
+
 /* main recurring classes */
 .blacktext {
     color: black;
 }
+
 .white {
     background-color: rgb(255, 255, 240);
 }
+
 .position {
     display: flex;
     justify-content: center;
 }
+
 .sanswhite {
     color: white;
     font-family: sans-serif;
 }
+
 /* header */
 .myname {
     margin-left: 25px;
 }
+
 .contact {
     margin-right: 25px;
-    text-decoration: none;
 }
-/* introduction section */
+/* intro */
 .intro {
     display: flex;
     margin: 30px;
     width: 1200px;
     height: 300px;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
+
 .name {
-    margin-left: 100px;
     font-style: italic;
     font-size: 50px;
 }
+
 .student {
-    margin-left: 100px;
     font-size: 32px;
 }
+
+.meimg {
+    margin-top: 4px;
+    height: 300px;
+    width: auto;
+}
 /* tools section */
+#infoblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .toolscontainer {
     display: flex;
     justify-content: space-between;
@@ -67,6 +91,7 @@ h3 {
     width: 1200px;
     height: 300px;
 }
+
 .tools {
     display: flex;
     flex-direction: column;
@@ -74,6 +99,7 @@ h3 {
     width: 500px;
     height: 300px;
 }
+
 .skills {
     display: flex;
     width: 500px;
@@ -81,20 +107,39 @@ h3 {
     align-items: center;
     justify-content: center;
 }
+
 .down {
     justify-content: space-evenly;
 }
+
 .tools2 {
     width: 500px;
     height: 300px;
+    flex-direction: column;
 }
+
 .toolstext {
     font-size: 45px;
     font-style: italic;
 }
+
 .toolslogo {
     height: 80px;
 }
+
+.scriptimg {
+    height: 200px;
+}
+
+.nothtml {
+    margin-left: 29px;
+    margin-right: 10px;
+}
+.textwidth {
+    width: 300px;
+    text-align: center;
+}
+
 /* projects section */
 .projecttitle {
     display: flex;
@@ -104,6 +149,7 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
 .project {
     display: flex;
     background-color: rgba(86, 106, 87, 1);
@@ -113,45 +159,78 @@ h3 {
     align-items: center;
     margin-bottom: 50px;
 }
+
 .projecttext {
     font-size: 45px;
 }
+
 .projecticon {
     width: 200px;
 }
+
 .projectimg {
     width: 500px;
     height: 300px;
     object-fit: cover;
 }
+
 .mastermindimg {
     object-position: left;
 }
+
 .bigtext {
     font-size: 25px;
     text-align: center;
+}
+/* Contact section */
+.thelastboxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    margin-bottom: 50px;
+}
+.contactmebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    width: 500px;
+    height: 150px;
+}
+.theinfobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 400px;
+    height: 500px;
 }
 /* Footer section */
 footer {
     display: flex;
     justify-content: space-around;
-    height: 180px;
-    align-items: center;
+    height: 170px;
+    align-items: flex-start;
 }
+
 .bigfooter {
     font-size: 20px;
 }
+
 .footercontent {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 20px;
 }
+
 .directions {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .directionlinks {
     margin-bottom: 10px;
 }
