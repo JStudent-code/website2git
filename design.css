@@ -10,7 +10,19 @@ header {
     align-items: center;
     justify-content: space-between
 }
+h1 {
+    font-weight: normal;
+}
+h2 {
+    font-weight: normal;
+}
+h3 {
+    font-weight: normal;
+}
 /* main recurring classes */
+.blacktext {
+    color: black;
+}
 .white {
     background-color: rgb(255, 255, 240);
 }
@@ -28,6 +40,7 @@ header {
 }
 .contact {
     margin-right: 25px;
+    text-decoration: none;
 }
 /* introduction section */
 .intro {
@@ -118,6 +131,7 @@ header {
     font-size: 25px;
     text-align: center;
 }
+/* Footer section */
 footer {
     display: flex;
     justify-content: space-around;
